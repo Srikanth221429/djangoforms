@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #h{
+            background-color: black;
+            color: azure;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        #g{
+            background-color: bisque;
+        }
+    </style>
 </head>
-<body>
+<body id="g">
     <center>
+        <h1 style="color: rgb(119, 128, 128);">Create_school</h1>
     <form method="POST">
         {% csrf_token %}
         {{ ESO.as_p }}
-        <input type="submit" value="Create_school"> 
+        <input type="submit" value="Create_school" id="h"> 
     </form>
 </center>
 </body>

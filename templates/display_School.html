@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body >
     <center>
         <h1>School</h1>
-    <table border="2px">
+    <table border="2px" cellpadding="3pxpx"  >
         <tr>
             <th>Sname</th>
             <th>Sprinciple</th>
             <th>Sbranch</th>
+            <th>email</th>
+            <th>reenteremail</th>
         </tr>
         {% for to in topic %}
         <tr>
             <td>{{to.Sname}}</td>
             <td>{{to.Sprinciple}}</td>
             <td>{{to.Sbranch}}</td>
+            <td>{{to.email}}</td>
+            <td>{{to.reenteremail}}</td>
+
         </tr>
         {% endfor %}
     </table>
